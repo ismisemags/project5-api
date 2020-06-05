@@ -1,0 +1,25 @@
+<div class="movieFull">
+    <div class="box">
+    <img class="movieImgFull" src="{{movie.medium_cover_image}}" />
+    <h4>{{movie.title}}</h4>
+
+    {{#if user}}
+        {{#if userHasVoted}}
+        <div>
+            <span>You have already rated this movie</span>
+        </div>
+        {{else}}
+        <div>
+            <span class="fa fa-star onestar checked"></span>
+            <span class="fa fa-star twostar checked"></span>
+            <span class="fa fa-star threestar checked"></span>
+            <span class="fa fa-star fourstar"></span>
+            <span class="fa fa-star fivestar"></span>
+            <button class="submitRating">Submit Rating</button>
+        </div>
+        {{/if}}
+    {{/if}}
+    <p><strong>Average Rating: </strong>{{averageStars}}</p>
+    <p><strong>Year: </strong>{{movie.year}}</p>
+    <p><strong>Description: </strong>{{movie.description_full}}</p>
+</div>
