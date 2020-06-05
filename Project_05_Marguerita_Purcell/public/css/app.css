@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+	text-align: justify;
+}
+
+body{
+	background: url('/images/bricks.jpg');
+	color: white !important;
+}
+
+#genre{
+	margin-left: 20px;
+}
+
+.movieLogo {
+    width: 70%;
+    height: 270px;
+    position: absolute;
+    left: 15%;
+	border: 5px solid violet;
+	border-radius: 10px;
+	box-shadow: 0px 0px 30px violet;
+	margin-top: 20px;
+}
+
+.movie{
+	float: left;
+	margin-right:15px;
+	margin-left:15px;
+	margin-bottom: 15px;
+	max-width: 245px;
+}
+
+.movieTitle{
+	overflow: hidden;
+	display:-webkit-box;
+	-webkit-line-clamp:1;
+	-webkit-box-orient:vertical;
+}
+
+.movie{
+	border: 5px solid transparent;
+}
+
+	.movie:hover, .movieImgFull, #genre{
+		border: 5px solid orange;
+		border-radius: 10px;
+		box-shadow: 0px 0px 30px orange;
+	}
+
+	.movieImgFull {
+		margin-bottom: 20px;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+		margin-top: 20px;
+	}
+
+.description{
+	overflow: hidden;
+	display:-webkit-box;
+	-webkit-line-clamp:3;
+	-webkit-box-orient:vertical;
+}
+
+.checked {
+	color: orange;
+  }
+
+  nav{
+	  padding: 5px;
+	  color: white;
+	  margin-bottom: 40px;
+	  height: 270px;
+  }
+
+  nav a{
+	  position: relative;
+	  top: 30px;
+	  color: white;
+	  margin-right: 20px;
+	  margin-top: 20px;
+	  padding: 5px;
+  }  
+
+  nav a:nth-child(2){
+	border: 5px solid yellow;
+	border-radius: 10px;
+	box-shadow: 0px 0px 30px yellow;
+  }
+
+  nav a:nth-child(3){
+	border: 5px solid blue;
+	border-radius: 10px;
+	box-shadow: 0px 0px 30px blue;
+  }
+
+
+.searchDiv{
+	position: absolute;
+	top: 25px;
+	right: 20px;
+	background: transparent;
+	padding: 5px;
+	max-width: 220px;
+	border: 5px solid orange;
+	border-radius: 10px;
+	box-shadow: 0px 0px 30px orange;
+}
+
+.searchDiv input{
+	border: 0;
+	width: 140px;
+	display: none;
+	background: transparent;
+	color: white;
+}
+
+.searchDiv img{
+	border: 0;
+	width: 20px;
+}
+
+.box{
+	position: relative;
+	justify-content: center;
+	align-items: center;
+	background: url('/images/bricks.jpg');
+	margin: 40px;
+	padding: 15px;
+}
+
+.glass{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 50%;
+	height: 100%;
+	display: block;
+	background: rgba(255,255,255,.1);
+	pointer-events: none;
+}
+
+.box .content{
+	padding: 20px;
+	color: #fff;
+}
+
+.box:before{
+	content: '';
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	right: -2px;
+	bottom: -2px;
+	background: #fff;
+	z-index: -1;
+}
+
+.box:after{
+	content: '';
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	right: -2px;
+	bottom: -2px;
+	background: #fff;
+	z-index: -2;
+	filter: blur(40px);
+}
+
+.box:nth-child(1):before,
+.box:nth-child(1):after{
+	background: linear-gradient(235deg, #89ff00, #010615, #00bcd4);
+}
+
+.box:nth-child(2):before,
+.box:nth-child(2):after{
+	background: linear-gradient(235deg, #ff005e, #010615, #fbff00);
+}
+
+.box:nth-child(3):before,
+.box:nth-child(3):after{
+	background: linear-gradient(235deg, #772aff, #010615, #2196f3);
+}

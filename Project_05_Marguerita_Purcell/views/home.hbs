@@ -1,0 +1,41 @@
+
+    <select id="genre" name="genre">
+        <option value="Recommended">Recommended</option>
+        <option value="Action">Action</option>
+        <option value="Adventure">Adventure</option>
+        <option value="Animation">Animation</option>
+        <option value="Biography">Biography</option>
+        <option value="Comedy">Comedy</option>
+        <option value="Crime">Crime</option>	
+        <option value="Documentary">Documentary</option>
+        <option value="Drama">Drama</option>
+        <option value="Family">Family</option>
+        <option value="Fantasy">Fantasy</option>
+        <option value="Film Noir">Film Noir</option>
+        <option value="History">History</option>
+        <option value="Horror">Horror</option>
+        <option value="Music">Music</option>
+        <option value="Musical">Musical</option>
+        <option value="Mystery">Mystery</option>
+        <option value="Romance">Romance</option>
+        <option value="Sci-Fi">Sci-Fi</option>
+        <option value="Short Film">Short Film</option>
+        <option value="Sport">Sport</option>
+        <option value="Superhero">Superhero</option>
+        <option value="Thriller">Thriller</option>
+        <option value="War">War</option>
+        <option value="Western">Western</option>
+    </select>
+
+<div style="margin-top: 30px">
+    
+    {{#each movieData}}
+    <a class=" movieBlock Recommended {{#each genres}}{{this}} {{/each}}" href="movie/{{id}}">
+        <div class="movie">
+            <img class="movieImg" src="{{medium_cover_image}}" />
+            <h4 class="movieTitle">{{title}}</h4>
+            <p class="description">{{description_full}}</p>
+        </div>
+    </a>
+    {{/each}}
+</div>
