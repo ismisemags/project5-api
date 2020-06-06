@@ -16,7 +16,7 @@ module.exports = (app) => {
       });
   });
 
-  app.get("/:title",(req,res)=>{       
+  app.get("/t/:title",(req,res)=>{       
     const { title } = req.params; 
     console.log(title);   
     var user = req.signedCookies["user_id"];    
