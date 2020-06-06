@@ -86,7 +86,7 @@ $(document).ready(function(){
                 window.location.href = "/movie/" + result;
             }
             else{
-                window.location.href = "/"+title;
+                window.location.href = "/t/"+title;
             }
         });
     });
